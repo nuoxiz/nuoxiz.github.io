@@ -9,33 +9,54 @@
       href="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgetdrawings.com%2Ffree-icon%2Fchina-flag-icon-61.png&f=1&nofb=1"
       type="image/png"
     />
+    <link rel="stylesheet" href="./css/styling.css" />
     <title>Explore</title>
   </head>
   <body>
-    <a href="./index.html">
-      <img
-        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpurepng.com%2Fpublic%2Fuploads%2Flarge%2Fchina-qht.png&f=1&nofb=1"
-        alt=""
-        width="40%"
-      />
-    </a>
+    <div class="bg-Image">
+      <header>
+        <img
+          class="logo"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpurepng.com%2Fpublic%2Fuploads%2Flarge%2Fchina-qht.png&f=1&nofb=1"
+          alt=""
+          width="40%"
+          title="Home"
+        />
 
-    <hr />
-    <h2 id="home">China City Documentry</h2>
-    <p>A simple documentry of Chinese cities.</p>
-    <hr />
-    <section>
-      <ul>
-        <li><a href="./shanghai.html">Shanghai</a></li>
-        <li><a href="./shenzhen.html">Shenzhen</a></li>
-        <li><a href="./Guangzhou.html">Guangzhou</a></li>
-        <!--
-        <li><a href="">Chongqing</a></li>
-        <li><a href="">Dongguan</a></li>
-        <li><a href="">Wuhan</a></li>
-        <li><a href="">Shenyang</a></li>
-        -->
-      </ul>
-    </section>
+        <h2 id="home">China City Documentry</h2>
+
+        <section>
+          <nav class="topNav">
+            <div id="navleft">
+              <a href="./news.html">News</a>
+              <a href="./about.html">About</a>
+            </div>
+
+            <div id="navcenter">
+              <a href="./index.html" class="active">Home</a>
+            </div>
+
+            <div id="navright">
+              <a href="./explore.html">Explore</a>
+              <a href="./contact.html">Contact</a>
+            </div>
+          </nav>
+        </section>
+      </header>
+      <hr />
+      <section>
+        <h3>Explore:</h3>
+        <ul>
+          <a href="./beijing.html">Beijing</a>
+          <a href="./shanghai.html">Shanghai</a>
+          <a href="./shenzhen.html">Shenzhen</a>
+          <a href="./Guangzhou.html">Guangzhou</a>
+          <a href="./chongqing.html">Chongqing</a>
+          <a href="./dongguang.html">Dongguan</a>
+          <a href="./wuhan.html">Wuhan</a>
+          <a href="./shenyang.html">Shenyang</a>
+        </ul>
+      </section>
+    </div>
   </body>
 </html>
