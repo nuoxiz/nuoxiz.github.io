@@ -3,7 +3,8 @@
 }
 /* Background colour */
 .bg-container {
-  background-color: black;
+  /* background-color: black; */
+  background-color: #202021;
   width: 97.5vw;
   z-index: 0;
 }
@@ -267,3 +268,147 @@ img[id*="gallery-image-"] {
   }
 }
 
+/*          Contact section           */
+/* #contact-section {
+  background: white;
+  z-index: 1;
+  width: 90vw;
+  margin: 2.5vw;
+  margin: auto;
+} */
+#contact-heading {
+  grid-area: heading;
+}
+#map-embed {
+  grid-area: map;
+  width: 45vw;
+  height: 60vh;
+  box-shadow: 2px 3px 5px red;
+  margin-bottom: 1vh;
+}
+#opening-hr {
+  grid-area: op-hr;
+  margin-right: 1vw;
+}
+#opening-hr p {
+  font-size: 2vh;
+}
+#location {
+  grid-area: location;
+}
+#location p {
+  font-size: 2vh;
+}
+#social-media {
+  grid-area: social-media;
+  display: block;
+}
+#media-container {
+  margin-top: 2vh;
+}
+#social-media a {
+  color: white;
+  margin: 0.4vw;
+}
+#way-contact {
+  grid-area: contact;
+}
+#way-contact p {
+  font-size: 2vh;
+}
+#contact-container {
+  display: grid;
+  grid-template-areas:
+    "heading heading heading heading"
+    "map map op-hr location"
+    "map map social-media contact";
+  margin: 2.5vw;
+  color: white;
+}
+#res-heading {
+  color: white;
+  box-shadow: 0 3px 5px red;
+  text-align: center;
+  font-size: 4vh;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #map-embed {
+    margin-right: 2vh;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #map-embed {
+    margin-right: 3vw;
+  }
+  #opening-hr {
+    font-size: 3.5vh;
+  }
+  #opening-hr p {
+    font-size: 2.5vh;
+  }
+  #location {
+    font-size: 3.5vh;
+  }
+  #location p {
+    font-size: 2.5vh;
+  }
+  #social-media {
+    font-size: 3vh;
+  }
+  #media-container {
+    margin-top: 2vh;
+  }
+  #social-media a {
+    color: white;
+    margin: 0.4vw;
+  }
+  #way-contact {
+    font-size: 3.5vh;
+  }
+  #way-contact p {
+    font-size: 2.5vh;
+  }
+}
+/*         Privacy section          */
+#legal {
+  grid-area: legal;
+}
+#corperate {
+  grid-area: corperate;
+}
+#customer {
+  grid-area: customer;
+}
+#p-logo {
+  grid-area: p-logo;
+  margin: auto;
+}
+#privacy-container {
+  display: grid;
+  grid-template-areas:
+    "legal corperate customer"
+    "p-logo p-logo p-logo";
+  margin: 5vw;
+  color: white;
+  text-align: center;
+}
+#privacy-container a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+.privacy-heading {
+  font-size: 3vh;
+}
+
+footer {
+  width: 97.5vw;
+  text-align: center;
+  border: 1px solid #ed1c24;
+  background: #ed1c24;
+  color: white;
+}
