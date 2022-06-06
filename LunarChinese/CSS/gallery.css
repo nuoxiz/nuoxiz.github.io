@@ -1,0 +1,45 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Background colour */
+.bg-container {
+  background-color: black;
+  width: 97.5vw;
+  z-index: 0;
+}
+.content-container {
+  z-index: 1;
+}
+/*           Navigation bar styling           */
+.nav-container {
+  display: grid;
+  grid-template-columns: "auto 1fr";
+  background: #ed1c24;
+  position: sticky;
+  top: 0;
+}
+.logo {
+  box-sizing: border-box;
+  grid-column: 1;
+  height: 8.5vw;
+  background: #ed1c24;
+  margin-left: 1.5vw;
+  padding-top: 1.5vh;
+}
+.right-menu {
+  grid-column: 2;
+  background: #ed1c24;
+  float: right;
+  padding-top: 4vw;
+}
+.right-menu a {
+  text-align: center;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+  margin-right: 3vw;
+  font-size: 2vw;
+}
+.right-menu a:hover {
+  color: black;
+}
