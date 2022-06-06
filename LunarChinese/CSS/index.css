@@ -269,15 +269,11 @@ img[id*="gallery-image-"] {
 }
 
 /*          Contact section           */
-/* #contact-section {
-  background: white;
-  z-index: 1;
-  width: 90vw;
-  margin: 2.5vw;
-  margin: auto;
-} */
+
 #contact-heading {
   grid-area: heading;
+  width: 85vw;
+  margin: auto;
 }
 #map-embed {
   grid-area: map;
@@ -336,6 +332,21 @@ img[id*="gallery-image-"] {
 @media only screen and (max-width: 600px) {
   #map-embed {
     margin-right: 2vh;
+    width: 90vw;
+  }
+  #res-heading {
+    font-size: 2.5vh;
+  }
+  #contact-container {
+    grid-template-areas:
+      "heading heading heading heading"
+      "map map map map"
+      "map map map map"
+      "op-hr op-hr location location"
+      "social-media social-media contact contact";
+  }
+  #res-heading {
+    font-size: 2.5vh;
   }
 }
 
