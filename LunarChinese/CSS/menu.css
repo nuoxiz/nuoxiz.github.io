@@ -19,6 +19,8 @@
   background: #ed1c24;
   position: sticky;
   top: 0;
+
+  z-index: 2;
 }
 .logo {
   box-sizing: border-box;
@@ -175,4 +177,76 @@ footer {
   border: 1px solid #ed1c24;
   background: #ed1c24;
   color: white;
+}
+
+/* .overlay {
+  position: absolute;
+  opacity: 1;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  text-align: center;
+  color: white;
+  font: 2vw;
+  /* Reset the position of overlay div */
+/* top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.overlay-container {
+  position: relative;
+  width: 50vw;
+}
+.image {
+  display: block;
+  width: 50vw;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay-container:hover .overlay {
+  opacity: 1;
+} */
+
+/*              Cantonese section            */
+.image {
+  width: 100%;
+  display: block;
+}
+.overlay-container {
+  position: relative;
+  border: 2px solid red;
+  width: 50vw;
+}
+.overlay {
+  opacity: 0;
+  position: absolute; /*relative to its parent: overlay-container */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  border: 1px solid white;
+
+background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+}
+.text {
+  position: absolute;
+  color: white;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.overlay-container:hover .overlay{
+    opacity:1;
 }
