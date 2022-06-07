@@ -1,0 +1,20 @@
+h2 {
+  /*display: inline-block;*/
+  text-align: center;
+}
+div {
+  display: inline-block;
+  background-color: aqua;
+  color: blue;
+  margin: 20px;
+  border: 20px solid rgb(30, 162, 233);
+  width: 33%;
+}
+p {
+  text-align: center;
+}
+#center {
+  width: 95%;
+  display: block;
+  margin: 0 auto;
+}

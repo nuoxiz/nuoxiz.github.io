@@ -1,0 +1,68 @@
+<!-- A form is used when we want to collect data.
+    the collection of the data is done in the backend -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" type="image/png" href="https://cdn.onlinewebfonts.com/svg/img_349207.png">
+</head>
+<body>
+    <h2>Gym membership registration</h2>
+    <p>Please fill in your details below:</p>
+    <form>
+        <h3>Name:</h3>
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name"><br>
+        <h3>Gender:</h3>
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" id="doNotWantToTell" name="gender">
+        <label for="doNotWantToTell">Don't want to specify</label>
+        <h3>Home Address:</h3>
+        <label for="line1">Line 1:</label>
+        <input type="text" placeholder="Estate, appartment etc." id="line1">
+        <br>
+        <label for="line2">Line 2:</label>
+        <input type="text" placeholder="Street" id="line2">
+        <br>
+        <label for="line3">Line 3:</label>
+        <input type="text" placeholder="Town or city" id="line3">
+        <br>
+        <label for="line4">Line 4:</label>
+        <input type="text" placeholder="Extra information.">
+        <br>
+        <label for="line5">Line 5:</label>
+        <input type="text" placeholder="County, state, province etc." id="line5">
+        <br>
+        <label for="line6">Line 6:</label>
+        <input type="text" value="Ireland, Republic of" id="line6">
+        <br>
+        <label for="billingAddress"><strong>Is your billing address the same as above?</strong></label>
+        <input type="radio">
+
+        <h4>Create Account:</h4>
+        <label for="email">Account :</label>
+        <input type="email" id="email" placeholder="example@mail.com">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" placeholder="8-16 characters" id="password">
+        <br>
+        <label for="password2">Confirm your password:</label>
+        <input type="password" id="password2" placeholder="Enter your password again">
+        <h3>Choose your plan:</h3>
+        <select name="plan" id="">
+            <option value="1 Month €30">1 Month €30</option>
+            <option value="3 Months €80">3 Month €80</option>
+            <option value="6 Months €144">6 Months €144</option>
+            <option value="12 Months €250">12 Months €250</option>
+        </select>
+        <br><br>
+        <input type="button" name="" id="" value="Proceed to payment">
+    </form>
+</body>
+</html>
