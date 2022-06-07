@@ -178,52 +178,34 @@ footer {
   background: #ed1c24;
   color: white;
 }
-
-/* .overlay {
-  position: absolute;
-  opacity: 1;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-  text-align: center;
-  color: white;
-  font: 2vw;
-  /* Reset the position of overlay div */
-/* top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
 }
-.overlay-container {
-  position: relative;
-  width: 50vw;
-}
-.image {
-  display: block;
-  width: 50vw;
-}
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-.overlay-container:hover .overlay {
-  opacity: 1;
-} */
 
 /*              Cantonese section            */
-.image {
+img[class*="image"] {
+  display: inline-block;
   width: 100%;
+  height: auto;
   display: block;
+  /* padding: 2%; */
+  box-sizing: border-box;
+  box-shadow: 0.5px 3px 5px red;
+}
+/* make the image to fit the whole div */
+@supports (object-fit: cover) {
+  img[class*="image"] {
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
 }
 .overlay-container {
   position: relative;
-  border: 2px solid red;
-  width: 50vw;
+  margin-right: 1.5%;
+  margin-bottom: 2%;
+  width: 30%;
 }
 .overlay {
   opacity: 0;
@@ -232,10 +214,9 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  
-  border: 1px solid white;
+  transition: 1s ease;
 
-background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 .text {
   position: absolute;
@@ -246,7 +227,35 @@ background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  font-size: 85%;
 }
-.overlay-container:hover .overlay{
-    opacity:1;
+.overlay-container:hover .overlay {
+  opacity: 1;
+}
+
+.side-bar {
+  text-decoration: none;
+  width: 15vw;
+  margin-left: 1vw;
+  position: fixed;
+  z-index: 3;
+  overflow: hidden;
+  z-index: 3;
+  top: 16%;
+  word-wrap: break-word;
+}
+.menu-container {
+  margin-left: 17vw;
+}
+
+.side-bar a {
+  font-size: 100%;
+  color: white;
+  display: block;
+  padding-bottom: 5%;
+  transition: font-size 1s ease;
+  z-index: 3;
+}
+.side-bar a:hover{
+    font-size: 135%;
 }
