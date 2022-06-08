@@ -256,6 +256,28 @@ img[class*="image"] {
   transition: font-size 1s ease;
   z-index: 3;
 }
-.side-bar a:hover{
-    font-size: 135%;
+.side-bar a:hover {
+  font-size: 135%;
+}
+
+@media only screen and (max-width: 600px) {
+  .side-bar a {
+    font-size: 90%;
+  }
+  .side-bar a:hover {
+    font-size: 110%;
+  }
+  .subtitle {
+    font-size: 3vw;
+  }
+  .overlay-container {
+    width: 90%;
+  }
+}
+#drink strong {
+  color: white;
+}
+.menu-container strong {
+  color: white;
+  font-style: italic;
 }
