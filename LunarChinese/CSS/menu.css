@@ -61,6 +61,7 @@
   background-size: cover;
   position: relative;
   margin-bottom: 6vh;
+  border: 2px solid red;
 }
 .cover-image-text {
   box-sizing: border-box;

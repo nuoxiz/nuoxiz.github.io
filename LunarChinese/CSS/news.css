@@ -1,0 +1,185 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+/* Background colour */
+.bg-container {
+  /* background-color: black; */
+  background-color: #202021;
+  width: 97.5vw;
+  z-index: 0;
+}
+.content-container {
+  z-index: 1;
+}
+/*           Navigation bar styling           */
+.nav-container {
+  display: grid;
+  grid-template-columns: "auto 1fr";
+  background: #ed1c24;
+  position: sticky;
+  top: 0;
+}
+.logo {
+  box-sizing: border-box;
+  grid-column: 1;
+  height: 12vh;
+  background: #ed1c24;
+  margin-left: 1.5vw;
+  margin-top: 1.5vh;
+}
+.right-menu {
+  grid-column: 2;
+  background: #ed1c24;
+  float: right;
+  /* padding-top: 4vw; */
+  transform: translate(0, 100%);
+}
+.right-menu a {
+  text-align: center;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+  margin-right: 3vw;
+  font-size: 2vw;
+}
+.right-menu a:hover {
+  color: black;
+}
+/*               Cover image              */
+.cover-image-container {
+  z-index: 1;
+  background-image: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../Images/coverImage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 6vh;
+  border: 2px solid red;
+}
+.cover-image-text {
+  box-sizing: border-box;
+  margin: auto;
+  width: 89vw;
+  height: 80vh;
+}
+.cover-image-text h1 {
+  text-align: center;
+  position: relative;
+  display: block;
+  top: 40%;
+  text-shadow: 1px 5px 5px red, 0 3px 5px black;
+  font-size: 15vh;
+}
+.cover-image-text h2 {
+  text-align: center;
+  position: relative;
+  display: block;
+  top: 25%;
+  text-shadow: 1px 5px 5px red, 0 3px 5px black;
+  font-size: 5vh;
+}
+h1,
+h2 {
+  color: white;
+}
+
+.subtitle {
+  text-align: center;
+  display: block;
+  top: 25%;
+  text-shadow: 1px 5px 5px red, 0 3px 5px black;
+  font-size: 5vh;
+  border: 1.5px solid;
+  width: 50vw;
+  margin: auto;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .right-menu {
+    /* padding-top: 1.8vh; */
+    transform: translate(0, 200%);
+  }
+  .right-menu a {
+    font-size: 3vw;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .right-menu {
+    /* padding-top: 1.2vh; */
+    transform: translate(0, 150%);
+  }
+  .right-menu a {
+    font-size: 3vw;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .right-menu {
+    /* padding-top: 0vh; */
+    transform: translate(0, 100%);
+  }
+  .right-menu a {
+    font-size: 3vw;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .right-menu {
+    transform: translate(0, 100%);
+  }
+  .right-menu a {
+    font-size: 2vw;
+  }
+}
+
+/*         Privacy section          */
+#legal {
+  grid-area: legal;
+}
+#corperate {
+  grid-area: corperate;
+}
+#customer {
+  grid-area: customer;
+}
+#p-logo {
+  grid-area: p-logo;
+  margin: auto;
+}
+#privacy-container {
+  display: grid;
+  grid-template-areas:
+    "legal corperate customer"
+    "p-logo p-logo p-logo";
+  margin: 5vw;
+  color: white;
+  text-align: center;
+}
+#privacy-container a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+.privacy-heading {
+  font-size: 3vh;
+}
+
+footer {
+  width: 97.5vw;
+  text-align: center;
+  border: 1px solid #ed1c24;
+  background: #ed1c24;
+  color: white;
+}
+section {
+  margin: 5%;
+}
+section p {
+  color: white;
+}

@@ -4,7 +4,6 @@
 }
 /* Background colour */
 .bg-container {
-  /* background-color: black; */
   background-color: #202021;
   width: 97.5vw;
   z-index: 0;
@@ -32,7 +31,7 @@
   grid-column: 2;
   background: #ed1c24;
   float: right;
-  /* padding-top: 4vw; */
+
   transform: translate(0, 100%);
 }
 .right-menu a {
@@ -59,6 +58,7 @@
   background-size: cover;
   position: relative;
   margin-bottom: 6vh;
+  border: 2px solid red;
 }
 .cover-image-text {
   box-sizing: border-box;
@@ -398,7 +398,6 @@ img[id*="gallery-image-"] {
 #p-logo {
   grid-area: p-logo;
   margin: auto;
-
 }
 #privacy-container {
   display: grid;

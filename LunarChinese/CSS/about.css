@@ -59,6 +59,7 @@
   background-size: cover;
   position: relative;
   margin-bottom: 6vh;
+  border: 2px solid red;
 }
 /* define the width and height of the text container to make room for the cover photo to completely show */
 .cover-image-text {
