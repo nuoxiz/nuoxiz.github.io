@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index.css" />
     <title>ABC Architecture</title>
   </head>
-  <body>
+  <body onscroll="displayYPosition()">
     <nav class="nav-bar">
       <div id="left-nav">
         <a href="index.html"
@@ -15,12 +15,109 @@
         /></a>
       </div>
       <div id="right-nav">
-        <a href="index.html">Home</a>
-        <a href="#about">About</a>
-        <a href="#design">Gallery</a>
-        <a href="#designer">Designer</a>
-        <a href="#contact">Contact</a>
+        <a class="active tablink" href="index.html" id="tab-home">Home</a>
+        <a class="tablink" href="#about" id="tab-about">About</a>
+        <a class="tablink" href="#design" id="tab-design">Gallery</a>
+        <a class="tablink" href="#designer" id="tab-designer">Designer</a>
+        <a class="tablink" href="#contact" id="tab-contact">Contact</a>
       </div>
     </nav>
+    <!--////// Cover Image //////-->
+    <main>
+      <section id="coverImage-container">
+        <img src="./images/coverImage.jpg" alt="Cover Image" />
+
+        <div id="cover-image-text-container">
+          <div id="cover-box-container">
+            <b id="cover-text-main-one">ABC</b>
+            <b id="cover-text-main-two">ARCHITECTURE</b>
+            <b id="cover-text-sub">Redefine Your Living Space</b>
+          </div>
+        </div>
+      </section>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero tempora
+        animi amet. Ducimus incidunt nesciunt dignissimos s fac assumenda
+        accusantium sapiente est apemagnam minus numquam minima exercitationem
+        autem
+      </p>
+      <section id="display-y">
+        <p id="y-position">Y position</p>
+      </section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+        repellendus quas repudiandae alias libero, praesentium est in laboriosam
+        aliquam officia amet nemo ratione voluptatum non odit necessitatibus vel
+        facere nisi ea ipsam hic consectetur beatae. Nemo asperiores sint
+        quisquam laboriosam dolores praesentium aliquam voluptatibus vel illum
+        voluptatum dolor saepe volt doloribus possimus architecto. Sed, maxime
+        consequatur molestias saepe provident quis exercitationem impedit.
+        Exercitationem aspernatur similique eius dicta sed autem illum neque
+        quod veniam aperiam! Distinctio sed voluptate totam mollitia! Molestiae
+        magni amet veritatis voluptatum commodi expedita voluptatem et iusto
+        nostrum, repellendus obcaecati ut quis aliquam voluptas libero
+        aspernatur quibusdam sed cupiditate corporis eum ad doloremque. Amet
+        aliquid beatae eos molestiae earum et nisi impedit mollitia aut maiores,
+        tempore facilis id deleniti possimus minima rem laboriosam quibusdam
+        vero dicta, reprehenderit dolorum. Asperiores repudiandae, at ea, sit
+        nobis officiis error esse minus eos provident in quis rerum reiciendis
+        amet maxime sed blanditiis cum est? Aut labore rerum ducimus temporibus
+        ipsam sit qui sequi. Veritatis nesciunt cum neque dolorem odit
+        recusandae repellat? Nisi ducimus facilis, nam voluptatibus officiis
+        eius laboriosam provident voluptatum similique placeat voluptas
+        recusandae accusamus rem ab nihil autem quasi sed qui? Ex, laborum
+        maiores. Consectetur, placeat. Veniam laudantium suscipit voluptate
+        commodi unde dolorem assumenda sapiente! Voluptas nesciunt nemo a
+        deleniti blanditiis dolorum in labore maxime quam quidem dolores illum
+        sit similique praesentium atque fugit ratione et accusantium
+        consequatur, nobis mollitia nisi porro quo. Culpa impedit nostrum
+        dolores. Aliquam hic tempora qui! Animi natus expedita temporibus ipsum
+        molestiae fugiat dolor enim nobis veniam sapiente reprehenderit est,
+        sint atque nostrum voluptates maxime pariatur? Reiciendis consectetur
+        itaque magni, tempora minima eius aliquid architecto enim deserunt quia
+        ducimus velit ratione aut facere, similique accusamus dolor in
+        doloremque. Quas, perspiciatis? Debitis error dolores nesciunt corrupti
+        placeat odit. Laudantium vero iusto vitae, quod tempora dolor eum ab
+        excepturi rerum omnis sapiente tempore libero esse harum magnam
+        recusandae illum nisi qui nemo sunt! Amet earum, doloremque aliquid
+        nihil itaque repudiandae aperiam excepturi deserunt iusto eum numquam
+        provident corporis minima non molestiae expedita animi porro
+        praesentium. Sequi doloribus cupiditate dolorem ullam ducimus, iusto
+        atque necessitatibus dicta sunt vitae impedit officiis obcaecati
+        reprehenderit blanditiis esse sint culpa magnam, ipsum porro ab!
+        Pariatur, aliquid. Reiciendis ab, minima voluptates doloremque illo
+        magnam odio, nisi veniam saepe dicta quisquam a sint animi. Harum, illo.
+        Odio cumque, harum totam incidunt nesciunt vero enim! Quidem doloribus
+        vel dolor sint optio. Sit aspernatur doloribus inventore ea totam
+        suscipit saepe perferendis nemo, quaerat nostrum excepturi, est, qui
+        ducimus laboriosam culpa eius. Quasi eum sint assumenda! Sapiente quo,
+        iure accusamus nam at, ut nulla explicabo, accusantium necessitatibus
+        quisquam mollitia temporibus! Nulla laborum totam tenetur deserunt
+        voluptatum! Delectus reprehenderit accusantium corrupti voluptatem
+        pariatur quas similique voluptatum magni! Esse ea dignissimos fugiat
+        vitae non. Natus distinctio corporis blanditiis consequuntur ad vitae
+        corrupti maxime cumque minima necessitatibus! Quis, repudiandae saepe.
+      </p>
+    </main>
+    <script>
+      function displayYPosition() {
+        let y = window.scrollY;
+        document.getElementById("y-position").innerHTML = "Y: " + y + "px";
+        if (y < 490) {
+          highlightTab("tab-home");
+        }
+        if (y > 490) {
+          highlightTab("tab-about");
+        }
+      }
+      function highlightTab(id) {
+        let tablinks = document.getElementsByClassName("tablink");
+        let n = tablinks.length;
+        for (let i = 0; i < n; i++) {
+          tablinks[i].className = tablinks[i].className.replace("active", "");
+        }
+        document.getElementById(id).className += " active";
+      }
+    </script>
   </body>
 </html>

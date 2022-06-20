@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pratice</title>
   </head>
-  <body onresize="displayWindowHeight()">
+  <body onresize="displayWindowHeight()" onscroll="getYPosition()">
     <h2>What can Javascript do?</h2>
-    <p id="demo">Javascript can change HTML content</p>
+    <p id="demo" style="display: fixed; top: 0">
+      Javascript can change HTML content
+    </p>
 
     <form>
       <fieldset>
@@ -25,6 +27,12 @@
           style="border: 1px solid red"
         />
       </fieldset>
+      <img
+        id="image"
+        src="../ArtGallery/Images/imageFour.jpg"
+        alt=""
+        style="display: none"
+      />
       <h4>Radio button</h4>
       <fieldset>
         <legend>Favourite Language</legend>
@@ -156,22 +164,35 @@
       //   display(promiseMessage);
       // }
       // printOrder();
-      function displayWindowHeight() {
-        let message =
-          "Height: " + window.innerHeight + " Width: " + window.innerWidth;
-        document.getElementById("demo").innerHTML = message;
+      // function displayWindowHeight() {
+      //   let message =
+      //     "Height: " + window.innerHeight + " Width: " + window.innerWidth;
+      //   document.getElementById("demo").innerHTML = message;
+      // }
+      // const element = document.getElementById("demo");
+      // let newP = document.createElement("p");
+      // let textNode = document.createTextNode("sdasda");
+      // newP.appendChild(textNode);
+      // newP.id = "screen-size";
+      // element.appendChild(newP);
+      // function displayScreenSize(){
+      //   let message = "<<SCREEN>> Height: " + screen.height + " Width: " + screen.width;
+      //   newP.innerHTML = message;
+      // }
+      // document.body.addEventListener("resize", displayScreenSize);
+      function getYPosition() {
+        document.getElementById("demo").innerHTML =
+          "Y: " + window.scrollY + "px";
+        if (window.scrollY > 10) {
+          document.getElementById("image").style.display = "block";
+        }
+        if (window.scrollY < 10) {
+          document.getElementById("image").style.display = "none";
+        }
       }
-      const element = document.getElementById("demo");
-      let newP = document.createElement("p");
-      let textNode = document.createTextNode("sdasda");
-      newP.appendChild(textNode);
-      newP.id = "screen-size";
-      element.appendChild(newP);
-      function displayScreenSize(){
-        let message = "<<SCREEN>> Height: " + screen.height + " Width: " + screen.width;
-        newP.innerHTML = message;
-      }
-      document.body.addEventListener("resize", displayScreenSize);
+      // document
+      //   .getElementsByTagName("body")[0]
+      //   .addEventListener("scroll", getYPosition);
     </script>
   </body>
 </html>
