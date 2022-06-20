@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/iconBar.css" />
+    <script
+      src="https://kit.fontawesome.com/0d6a193be3.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Icon Bar</title>
+  </head>
+  <body>
+    <nav id="horizontal-bar">
+      <div id="left-nav">
+        <a href="" id="logo"><i class="fa-brands fa-html5 fa-2x"></i></a>
+      </div>
+      <div id="right-nav">
+        <a
+          href=""
+          id="home"
+          class="active tablink"
+          onclick="highlightCurrentTab('home')"
+          ><i class="fa-solid fa-house fa-2x"></i
+        ></a>
+        <a
+          href=""
+          id="search"
+          class="tablink"
+          onclick='highlightCurrentTab("search")'
+          ><i class="fa-solid fa-magnifying-glass fa-2x"></i
+        ></a>
+        <a
+          href=""
+          id="contact"
+          class="tablink"
+          onclick='highlightCurrentTab("contact")'
+          ><i class="fa-solid fa-envelope fa-2x"></i
+        ></a>
+        <a
+          href=""
+          id="globe"
+          class="tablink"
+          onclick="highlightCurrentTab('globe')"
+          ><i class="fa-solid fa-earth-asia fa-2x"></i
+        ></a>
+        <a
+          href=""
+          id="trash-can"
+          class="tablink"
+          onclick="highlightCurrentTab('trash-can')"
+          onmousedown="highlightCurrentTab('trash-can')"
+          ><i class="fa-solid fa-trash-can fa-2x"></i
+        ></a>
+      </div>
+    </nav>
+    <script>
+      // function highlightCurrentTab(idName) {
+      //   document.getElementById(idName).className += "active";
+      // }
+      function highlightCurrentTab(id) {
+        let tablinks = document.getElementsByClassName("tablink");
+        for (let tab of tablinks) {
+          tab.className = tab.className.replace("active", "");
+        }
+        document.getElementById(id).className = "active";
+      }
+      // highlightCurrentTab("trash-can");
+    </script>
+  </body>
+</html>
