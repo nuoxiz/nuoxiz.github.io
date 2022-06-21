@@ -18,7 +18,7 @@
     ;
   >
     <nav id="side-nav">
-      <a href="" id="closebtn" onclick="closeSideNav()"
+      <a href="javascript:void(0)" id="closebtn" onclick="closeSideNav()"
         ><i class="fa-solid fa-xmark"></i
       ></a>
       <a class="" href="index.html" id="side-nav-home">Home</a>
@@ -155,15 +155,14 @@
       }
 
       function openSideNav() {
-        document.getElementById("side-nav").style.visibility = "visible";
         document.getElementById("side-nav").style.width = "40vw";
       }
       function closeSideNav() {
         document.getElementById("side-nav").style.width = "0";
       }
-      function closeSideNavOnload() {
-        document.getElementById("side-nav").style.visibility = "hidden";
-      }
+      // function closeSideNavOnload() {
+      //   document.getElementById("side-nav").style.visibility = "hidden";
+      // }
     </script>
   </body>
 </html>
