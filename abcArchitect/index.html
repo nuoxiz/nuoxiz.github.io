@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="./css/index.css" />
     <title>ABC Architecture</title>
   </head>
-  <body onscroll="displayYPosition()">
+  <body
+    onscroll="displayYPosition()"
+    onload=" setTimeout(coverAnimation, 1000);"
+  >
     <nav class="nav-bar">
       <div id="left-nav">
         <a href="index.html"
@@ -117,6 +120,12 @@
           tablinks[i].className = tablinks[i].className.replace("active", "");
         }
         document.getElementById(id).className += " active";
+      }
+
+      function coverAnimation() {
+        let obj = document.getElementById("cover-box-container");
+        obj.style.transform = "translate(37%, 75%)";
+        obj.style.transition = "transform 2s";
       }
     </script>
   </body>
