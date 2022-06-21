@@ -14,11 +14,11 @@
   <body
     onscroll="displayYPosition()"
     onresize="displayYPosition()"
-    onload="setTimeout(coverAnimation, 500)"
+    onload="setTimeout(coverAnimation, 500); "
     ;
   >
     <nav id="side-nav">
-      <a href="javascript:void(0)" id="closebtn" onclick="closeNav()"
+      <a href="" id="closebtn" onclick="closeSideNav()"
         ><i class="fa-solid fa-xmark"></i
       ></a>
       <a class="" href="index.html" id="side-nav-home">Home</a>
@@ -34,7 +34,9 @@
         /></a>
       </div>
       <div id="right-nav">
-        <a href="" id="menu-bar"><i class="fa-solid fa-bars"></i></a>
+        <a href="javascript:void(0)" id="menu-bar" onclick="openSideNav()"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
 
         <a class="active tablink" href="index.html" id="tab-home">Home</a>
         <a class="tablink side-nav" href="#about" id="tab-about side-nav"
@@ -150,6 +152,17 @@
         let obj = document.getElementById("cover-box-container");
         obj.style.transform = "translate(33%, 75%)";
         obj.style.transition = "transform 1.5s ease";
+      }
+
+      function openSideNav() {
+        document.getElementById("side-nav").style.visibility = "visible";
+        document.getElementById("side-nav").style.width = "40vw";
+      }
+      function closeSideNav() {
+        document.getElementById("side-nav").style.width = "0";
+      }
+      function closeSideNavOnload() {
+        document.getElementById("side-nav").style.visibility = "hidden";
       }
     </script>
   </body>
