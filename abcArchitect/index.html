@@ -4,13 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/0d6a193be3.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./css/index.css" />
     <title>ABC Architecture</title>
   </head>
   <body
     onscroll="displayYPosition()"
-    onload=" setTimeout(coverAnimation, 1000);"
+    onresize="displayYPosition()"
+    onload="setTimeout(coverAnimation, 500)"
+    ;
   >
+    <nav id="side-nav">
+      <a href="javascript:void(0)" id="closebtn" onclick="closeNav()"
+        ><i class="fa-solid fa-xmark"></i
+      ></a>
+      <a class="" href="index.html" id="side-nav-home">Home</a>
+      <a class="" href="#about" id="side-nav-about">About</a>
+      <a class="" href="#design" id="side-nav-design">Gallery</a>
+      <a class="" href="#designer" id="side-nav-designer">Designer</a>
+      <a class="" href="#contact" id="side-nav-contact">Contact</a>
+    </nav>
     <nav class="nav-bar">
       <div id="left-nav">
         <a href="index.html"
@@ -18,13 +34,20 @@
         /></a>
       </div>
       <div id="right-nav">
+        <a href="" id="menu-bar"><i class="fa-solid fa-bars"></i></a>
+
         <a class="active tablink" href="index.html" id="tab-home">Home</a>
-        <a class="tablink" href="#about" id="tab-about">About</a>
-        <a class="tablink" href="#design" id="tab-design">Gallery</a>
-        <a class="tablink" href="#designer" id="tab-designer">Designer</a>
-        <a class="tablink" href="#contact" id="tab-contact">Contact</a>
+        <a class="tablink side-nav" href="#about" id="tab-about side-nav"
+          >About</a
+        >
+        <a class="tablink side-nav" href="#design" id="tab-design">Gallery</a>
+        <a class="tablink side-nav" href="#designer" id="tab-designer side-nav"
+          >Designer</a
+        >
+        <a class="tablink side-nav" href="#contact" id="tab-contact">Contact</a>
       </div>
     </nav>
+
     <!--////// Cover Image //////-->
     <main>
       <section id="coverImage-container">
@@ -105,7 +128,8 @@
     <script>
       function displayYPosition() {
         let y = window.scrollY;
-        document.getElementById("y-position").innerHTML = "Y: " + y + "px";
+        let message = "Y: " + y + "px ||||| " + "WindowX: " + window.innerWidth;
+        document.getElementById("y-position").innerHTML = message;
         if (y < 490) {
           highlightTab("tab-home");
         }
@@ -124,8 +148,8 @@
 
       function coverAnimation() {
         let obj = document.getElementById("cover-box-container");
-        obj.style.transform = "translate(37%, 75%)";
-        obj.style.transition = "transform 2s";
+        obj.style.transform = "translate(33%, 75%)";
+        obj.style.transition = "transform 1.5s ease";
       }
     </script>
   </body>
