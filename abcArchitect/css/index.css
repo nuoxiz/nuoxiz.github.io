@@ -45,7 +45,7 @@
   display: grid;
   grid-template-areas: "left-nav right-nav";
   width: 99vw;
-  height: 12vh;
+  height: 10vh;
   background: -webkit-linear-gradient(right, #297dc6, #036aa9);
   background: linear-gradient(right, #297dc6, #036aa9);
   overflow: hidden;
@@ -57,7 +57,8 @@
   background: #0f62c5;
 }
 #left-nav img {
-  height: 12vh;
+  /* height: 12vh; */
+  width: 25%;
   padding-left: 1vw;
 }
 #menu-bar {
@@ -70,7 +71,8 @@
 
 /*         Cover IMage           */
 #coverImage-container img {
-  position: relative;
+  /* position: relative; */
+
   width: 99vw;
   overflow: hidden;
   display: inline;
