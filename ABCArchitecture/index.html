@@ -36,7 +36,7 @@
         ></a>
 
         <a class="active tablink horizontal-nav" href="index.html" id="tab-home">Home</a>
-        <a class="tablink horizontal-nav" href="#about" id="tab-about side-nav"
+        <a class="tablink horizontal-nav" href="#about-section" id="tab-about side-nav"
           >About</a
         >
         <a class="tablink horizontal-nav" href="#design" id="tab-design">Gallery</a>
@@ -83,7 +83,7 @@
         <p id="y-position">Y position</p>
       </section>
       <!--               About Section                  -->
-      <section class="article" id="about-section">
+      <section class="article" id="about-section" onload="textAnimation()">
         <figure id="about-image">
           <img src="./images/engineerDesigningTwo.jpg" alt="Engineer Looking at Computer">
         </figure>
@@ -164,6 +164,11 @@
          let ele = document.getElementsByClassName("overlay-container");
          ele[0].style.transition = "left 1.5s";
          ele[0].style.left = "30%";
+      }
+      function textAnimation(){
+        let element = document.getElementById("about-text");
+        element.style.transition = "left 1.5s";
+        element.style.left = "100vw"
       }
       setTimeout(displayYPosition, 100);
     </script>

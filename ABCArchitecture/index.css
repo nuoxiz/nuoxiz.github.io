@@ -127,7 +127,7 @@
 
 @keyframes fade {
   from {
-    opacity: 0.5;
+    opacity: 0.65;
   }
   to {
     opacity: 1;
@@ -166,11 +166,24 @@
 /*                   About section                      */
 #about-image img {
   grid-area: "about-image";
-  width: 95%;
+  width: 100%;
 }
 #about-text {
   width: 40vw;
   grid-area: "about-text";
+  word-wrap: normal;
+  background: -webkit-linear-gradient(
+    right,
+    rgb(41, 125, 198, 0.5),
+    rgb(3, 106, 169, 0.9)
+  );
+  background: linear-gradient(
+    right,
+    rgb(41, 125, 198, 0.5),
+    rgb(3, 106, 169, 0.9)
+  );
+  padding: 1%;
+  transition: "transform 1.5s";
 }
 #about-image {
   width: 60vw;
@@ -179,15 +192,36 @@
   display: grid;
   grid-template-areas: "about-image about-text";
   width: 100%;
-  background: #ebebeb;
+  /* background: #ebebeb; */
+  /* background: -webkit-linear-gradient(
+    right,
+    rgb(41, 125, 198, 0.5),
+    rgb(3, 106, 169, 0.9)
+  );
+  background: linear-gradient(
+    right,
+    rgb(41, 125, 198, 0.5),
+    rgb(3, 106, 169, 0.9)
+  ); */
   max-height: 80vh;
   overflow: hidden;
 }
 
 #about-text > b {
-  font-size: 4vw;
+  font-size: clamp(20px, 2vw, 4vw);
 }
-
+#about-text > p {
+    cursor: pointer;
+  font-size: clamp(15px, 2vw, 2vw);
+}
+#about-text > p,
+#about-text > b {
+  padding-right: 15%;
+  word-wrap: break-word;
+}
+#about-text>p:hover {
+    transform: translate("-50%");
+}
 /* #ebebeb */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 650px) {
@@ -232,6 +266,32 @@
   }
   #side-nav a:hover {
     background: #0f62c5;
+  }
+  .overlaying-box b {
+    font-size: 75%;
+  }
+  /*            About Section           */
+  #about-section {
+    grid-template-areas:
+      "about-image"
+      "about-text";
+    height: 80vh;
+  }
+  #about-image,
+  #about-text {
+    margin: auto;
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+  }
+  #about-image img {
+    /* margin-left: 2.5vw; */
+    width: 100vw;
+  }
+  #about-text > p,
+  #about-text > b {
+    margin-left: 2.5vw;
+    margin-top: 2%;
   }
 }
 
