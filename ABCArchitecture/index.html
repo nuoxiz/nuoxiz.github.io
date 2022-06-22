@@ -13,7 +13,7 @@
   </head>
   <body onscroll="displayYPosition()"
     onresize="displayYPosition()"
-    onload="setTimeout(coverAnimation, 500); ">
+    onload="setTimeout(showOverlayAnimation, 500); ">
     <nav id="side-nav">
       <a href="javascript:void(0)" id="closebtn" onclick="closeSideNav()"
         ><i class="fa-solid fa-xmark"></i
@@ -52,16 +52,31 @@
          <!--              Slideshow Images              -->
         <div class="slide fade">
           <img src="./images/coverImage.jpg" alt="Hero Image one" />
+                 
         </div>
         <div class="slide fade">
           <img src="./images/modernHome.jpg" alt="Hero Image two" />
+          
         </div>
         <div class="slide fade">
           <img src="./images/skyscrapper.jpg" alt="Hero Image three" />
-        </div>
+         
+         </div>
         <!--               Previous and next buttons              -->
-        <a href="javascript:void(0)" class="prev" onclick="plusSlide(-1)">&#10094</a>
-        <a href="javascript:void(0)" class="next" onclick="plusSlide(1)">&#10095</a>
+        <a href="javascript:void(0)" class="prev" onclick="plusSlide(-1, 'NO')">&#10094</a>
+        <a href="javascript:void(0)" class="next" onclick="plusSlide(1, 'NO');"
+       >&#10095</a>
+
+
+        <section class="overlay-container">
+         <div class="overlaying-box">
+            <b class="top-text-one">ABC</b>
+            <b class="top-text-two">ARCHITECTURE</b>
+            <b></b>
+            <b class="buttom-text">Redine Your Living Space</b>
+            
+         </div>
+        </section>
       </section>
 
       <section id="display-y">
@@ -74,22 +89,42 @@
     <script>
       let slideIndex = 1;
       let slides = document.getElementsByClassName("slide");
-      showSlide(slideIndex-1);
+      let overlays = document.getElementsByClassName("overlay-container");
+      showSlide(slideIndex-1, "YES");
       // Next/prevoius slide control
       function plusSlide(n){
-         showSlide((slideIndex += n));
+         
+        let ele = document.getElementsByClassName("overlay-container");
+        ele[0].style.opacity = 0;
+        ele[0].style.transition = "left 0.1s";
+        ele[0].style.left = "-40%";
+        showSlide((slideIndex += n), "NO");
+
       }
-      function showSlide(n){
+      function showSlide(n, firstTime){
          let i;
-         // let slides = document.getElementsByClassName("slide");
+
          let length = slides.length;
 
          // Loop back to first image if > length
+        
          if(n > length) {slideIndex = 1;}
          if(n < 1){ slideIndex = length;}
          for( i = 0; i < length; i++ ){
             slides[i].style.display = "none";
-            slides[i].style.display = "none";
+         }
+         let ele = document.getElementsByClassName("overlay-container");
+
+         if(firstTime === "NO")
+         {
+          setTimeout(() => {
+            ele[0].style.opacity = 1;
+          ele[0].style.transition = "left 1.5s";
+          ele[0].style.left = "30%";
+          // showOverlayAnimation();
+            
+          }, 500);
+          
          }
          slides[slideIndex - 1].style.display = "block";
       }
@@ -117,6 +152,11 @@
       }
       function closeSideNav(){
          document.getElementById("side-nav").style.width = "0";
+      }
+      function showOverlayAnimation(){
+         let ele = document.getElementsByClassName("overlay-container");
+         ele[0].style.transition = "left 1.5s";
+         ele[0].style.left = "30%";
       }
       setTimeout(displayYPosition, 100);
     </script>
