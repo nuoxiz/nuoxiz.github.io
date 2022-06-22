@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  overflow-x: hidden;
 }
 #display-y {
   z-index: 2;
@@ -48,6 +49,7 @@
   overflow: hidden;
   position: sticky;
   top: 0;
+  overflow: hidden;
   /* box-shadow: 0px 3px 5px white;
   margin-bottom: 0.5%; */
 }
@@ -58,8 +60,8 @@
   background: #0f62c5;
 }
 #left-nav img {
-  width: 25%;
-  padding-left: 1vw;
+  width: 50%;
+  padding-left: 2vw;
 }
 #menu-bar {
   display: none;
@@ -72,7 +74,7 @@
 .slideshow-container {
   overflow: hidden;
   max-width: 100vw;
-  max-height: 100vh;
+  max-height: 70vh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -83,13 +85,16 @@
   width: 100%;
   /* height: 100%; */
 }
+.slide img {
+  width: 100%;
+}
 .prev,
 .next {
   text-decoration: none;
-  color: black;
+  color: rgba(255, 255, 255, 0.9);
   height: 10%;
   width: 5%;
-  background: red;
+  background: transparent;
   /* text-align: center; */
   display: flex;
   justify-content: center;
@@ -105,9 +110,26 @@
 }
 .next:hover,
 .prev:hover {
-  background: #000;
+  background: -webkit-linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  );
 }
 
+/*                  Transition effect                   */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 650px) {
   a[class*="horizontal-nav"] {
