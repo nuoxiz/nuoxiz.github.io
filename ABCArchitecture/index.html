@@ -13,16 +13,16 @@
   </head>
   <body onscroll="displayYPosition()"
     onresize="displayYPosition()"
-    onload="setTimeout(showOverlayAnimation, 500); ">
+    onload="setTimeout(showOverlayAnimation, 500); " id="home">
     <nav id="side-nav">
       <a href="javascript:void(0)" id="closebtn" onclick="closeSideNav()"
         ><i class="fa-solid fa-xmark"></i
       ></a>
-      <a class="" href="index.html" id="side-nav-home">Home</a>
-      <a class="" href="#about" id="side-nav-about">About</a>
-      <a class="" href="#design" id="side-nav-design">Gallery</a>
-      <a class="" href="#designer" id="side-nav-designer">Designer</a>
-      <a class="" href="#contact" id="side-nav-contact">Contact</a>
+      <a class="" href="#home" id="side-nav-home" onclick="closeSideNav()">Home</a>
+      <a class="" href="#about-section" id="side-nav-about" onclick="closeSideNav()">About</a>
+      <a class="" href="#design" id="side-nav-design" onclick="closeSideNav()">Gallery</a>
+      <a class="" href="#designer" id="side-nav-designer" onclick="closeSideNav()" >Designer</a>
+      <a class="" href="#contact" id="side-nav-contact" onclick="closeSideNav()">Contact</a>
     </nav>
    <nav class="nav-bar">
       <div id="left-nav">
@@ -35,7 +35,7 @@
           ><i class="fa-solid fa-bars"></i
         ></a>
 
-        <a class="active tablink horizontal-nav" href="index.html" id="tab-home">Home</a>
+        <a class="active tablink horizontal-nav" href="#home" id="tab-home">Home</a>
         <a class="tablink horizontal-nav" href="#about-section" id="tab-about side-nav"
           >About</a
         >
@@ -73,7 +73,7 @@
             <b class="top-text-one">ABC</b>
             <b class="top-text-two">ARCHITECTURE</b>
             <b></b>
-            <b class="buttom-text">Redine Your Living Space</b>
+            <b class="buttom-text">Redefine Your Living Space</b>
             
          </div>
         </section>
@@ -84,25 +84,66 @@
       </section>
       <!--               About Section                  -->
       <section class="article" id="about-section" onload="textAnimation()">
-        <figure id="about-image">
+        <figure class="image-section">
           <img src="./images/engineerDesigningTwo.jpg" alt="Engineer Looking at Computer">
         </figure>
-        <article id="about-text">
+        <article class="text-section">
           <b>Who Are WE?</b>
           <p>Founded in 1901, we are the oldest architecture contracter in Ireland. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia accusantium fuga ipsa dignissimos eligendi laudantium ratione a odit dolores temporibus aspernatur fugiat eos rem corporis, maxime, autem dolorum molestias beatae vero. Ducimus ullam iure corporis eius! Repudiandae aut excepturi esse voluptas! Aperiam voluptatibus odit in fugiat reprehenderit asperiores ut excepturi.
           </p>
         </article>
       </section>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum corrupti voluptatem, eius iste beatae minima, nobis expedita architecto velit ad omnis suscipit recusandae molestias quo incidunt alias numquam, explicabo obcaecati ex! Tenetur optio repellendus officia dignissimos sint sit iusto hic obcaecati voluptatem? Doloremque numquam facere accusantium repellat maiores omnis eligendi enim voluptas. Iste eligendi quas facere explicabo iusto commodi hic labore error odio nesciunt illo ratione ex sit, velit nostrum sint perspiciatis. Commodi, eius harum. Deserunt aut officiis odit sint voluptatum assumenda veritatis similique, dicta, optio obcaecati esse, rem odio nobis. Provident, necessitatibus tempora atque aspernatur repellat hic pariatur molestiae natus repellendus sint, nam iure. Illum doloribus, autem aperiam reprehenderit sapiente minus odio fuga modi exercitationem voluptate optio eaque aspernatur, commodi magni minima? Autem voluptate, exercitationem officiis ipsum quos praesentium dicta aspernatur odit expedita quas quis eligendi distinctio temporibus explicabo aliquam fugit eius inventore blanditiis? Voluptate rerum harum aliquam consequatur?</p>
+      <section class="article" id="gallery-section">
+        <!--               Previous and next buttons              -->
+        <a href="javascript:void(0)" class="prev" id="gallery-prev" onclick="plusGallerySlide(-1)">&#10094</a>
+        <a href="javascript:void(0)" class="next" id="gallery-next" onclick="plusGallerySlide(1);"
+       >&#10095</a>
+        <div class="slide2">
+          <figure class="image-section slide-image">
+            <img src="./images/appartment.jpg" alt="Appartment facing the see">
+          </figure>
+          <article class="text-section slide-text">
+            <b>Luxuary Appartment</b>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolorum corporis dolor quos eius id ad est aliquam ratione, iure consequatur tenetur. Consequuntur amet ex repellat obcaecati eligendi minus hic incidunt est! Ratione cupiditate odio provident ut, animi libero quam recusandae nihil ipsum, asperiores minima rem hic, tempora quidem eos! Cum iste magnam quisquam, natus adipisci totam voluptates fugit libero.</p>
+          </article>
+        </div>
+        <div class="slide2">
+          <figure class="image-section slide-image">
+            <img src="./images/villa.jpg" alt="Villa Image">
+          </figure>
+          <article class="text-section slide-text">
+            <b>Detached House</b>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione sit impedit iste dolorum odio architecto explicabo voluptate exercitationem eaque illo? Velit veritatis minima ullam natus deserunt quisquam, tempora, animi nam error ut molestiae maxime in perspiciatis iure reiciendis consequuntur nisi alias voluptatem doloremque ratione at pariatur. Omnis a minima ad alias, et accusamus iusto id? Deserunt culpa vel nesciunt! Accusamus expedita eius explicabo sit modi. Inventore ducimus cum beatae pariatur distinctio facere doloremque asperiores quidem sit. Sequi </p>
+          </article>
+        </div>
+        
+      </section>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum corrupti voluptatem, eius iste beatae minima, nobis expedita architecto velit ad omnis suscipit recusandae molestias quo incidunt alias numquam, explicabo obcaecati ex! Tenetur optio repellendus officia dignissimos sint sit iusto hic obcaecati voluptatem? Doloremque numquam facere accusantium repellat maiores omnis eligendi enim voluptas. Iste eligendi quas facere explicabo iusto commodi hic labore error odio nesciunt illo ratione ex sit, velit nostrum sint perspiciatis. Commodi, eius harum. Deserunt aut officiis odit sint vodistinctio temporibus explicabo aliquam fugit eius inventore blanditiis? Voluptate rerum harum aliquam consequatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem magnam corporis neque necessitatibus quidem quibusdam ducimus quod distinctio ipsum alias rem, nulla vitae molestias fuga explicabo consectetur, animi inventore id! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, tempore deleniti? Ducimus, dignissimos. Praesentium repellendus incidunt ea ipsum asperiores sapiente aliquid aut nemo saepe voluptate modi accusamus quod odio eveniet, minima ut possimus necessitatibus maxime et esse! Porro, quo repudiandae! Ullam magnam animi ipsum quaerat officia id omnis distinctio! Pariatur beatae quam dolor laborum! Dolore consectetur, dicta eum consequuntur amet cupiditate quod autem illum, est veniam alias quibusdam placeat commodi molestiae perspiciatis maiores suscipit rem aspernatur! Officiis consequatur atque aperiam dolor, voluptas cum maiores ab reprehenderit veritatis blanditiis deleniti tenetur rem pariatur. Amet, est aperiam aut aliquam, vitae molestias numquam veniam obcaecati ab iusto tempore quaerat nihil natus quasi. Dolore molestias facere quaerat, ipsam eaque esse voluptates delectus voluptate maiores blanditiis, deleniti fuga et vero, officia rem autem consequatur voluptatem aliquam sint optio temporibus ab soluta. Illum quas eos provident esse dolorem facere sed? Distinctio delectus ab in facere neque! </p>
     </main>
     <script>
       let slideIndex = 1;
+      let gallerySlideIndex = 0;
       let slides = document.getElementsByClassName("slide");
       let overlays = document.getElementsByClassName("overlay-container");
+      let gallerySlide = document.getElementsByClassName("slide2");
       showSlide(slideIndex-1, "YES");
+      showGallerySlide(0);
       // Next/prevoius slide control
+      
+      function showGallerySlide(index){
+        let length = gallerySlide.length;
+        if(index<0) {gallerySlideIndex = length-1;}
+        if(index>=length) {gallerySlideIndex = 0};
+        for(let i = 0; i < length; i++ ){
+          gallerySlide[i].style.display = "none";
+        }
+        gallerySlide[gallerySlideIndex].style.display = "inline";
+      }
+      function plusGallerySlide(n){
+        showGallerySlide((gallerySlideIndex += n));
+      }
+      
       function plusSlide(n){
-         
         let ele = document.getElementsByClassName("overlay-container");
         ele[0].style.opacity = 0;
         ele[0].style.transition = "left 0.1s";
@@ -123,16 +164,14 @@
             slides[i].style.display = "none";
          }
          let ele = document.getElementsByClassName("overlay-container");
-
          if(firstTime === "NO")
          {
           setTimeout(() => {
             ele[0].style.opacity = 1;
-          ele[0].style.transition = "left 1.5s";
-          ele[0].style.left = "30%"; 
-          }, 500);
-          
-         }
+            ele[0].style.transition = "left 1.5s";
+            ele[0].style.left = "30%"; 
+            }, 500);
+          }
          slides[slideIndex - 1].style.display = "block";
       }
       function displayYPosition() {

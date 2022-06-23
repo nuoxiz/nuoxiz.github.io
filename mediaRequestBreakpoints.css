@@ -17,3 +17,16 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 }
+
+
+
+
+<div class="slide2">
+          <figure class="image-section slide-image">
+            <img src="" alt="">
+          </figure>
+          <article class="text-section slide-text">
+            <b></b>
+            <p></p>
+          </article>
+        </div>
