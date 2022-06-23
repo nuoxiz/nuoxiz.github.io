@@ -22,7 +22,7 @@
       <a class="" href="#about-section" id="side-nav-about" onclick="closeSideNav()">About</a>
       <a class="" href="#gallery-section" id="side-nav-design" onclick="closeSideNav()">Gallery</a>
       <a class="" href="#section-team" id="side-nav-designer" onclick="closeSideNav()" >Team</a>
-      <a class="" href="#contact" id="side-nav-contact" onclick="closeSideNav()">Contact</a>
+      <a class="" href="#contact-section" id="side-nav-contact" onclick="closeSideNav()">Contact</a>
     </nav>
    <nav class="nav-bar">
       <div id="left-nav">
@@ -43,7 +43,7 @@
         <a class="tablink horizontal-nav" href="#section-team" id="tab-designer"
           >Team</a
         >
-        <a class="tablink horizontal-nav" href="#contact" id="tab-contact">Contact</a>
+        <a class="tablink horizontal-nav" href="#contact-section" id="tab-contact">Contact</a>
       </div>
    </nav>
     <main>
@@ -177,8 +177,69 @@
           <div class="contact-button">Contact</div>
         </div>
       </section>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore necessitatibus officia ipsa doloremque quaerat! Dignissimos reprehenderit sint perspiciatis facere, tempora aliquam voluptatem accusamus dicta, magni assumenda architecto alias? Pariatur esse accusamus nemo totam ea, deserunt consequatur autem aliquid molestiae quidem molestias optio labore repellat maiores! Ratione nobis iusto vel vitae!</p>
+      <section class="contact-form-container" id="contact-section">
+        <b id="form-heading">Leave Your Message</b><br>
+        <form >
+          
+          <label for="first-name">First Name:</label><br>
+          <input type="text" name="first-name" id="first-name" placeholder="Your First Name..."><br>
+          <label for="last-name">Last Name:</label><br>
+          <input type="text" name="last-name" id="last-name" placeholder="Your Last Name..."><br>
+          <label for="region">Region:</label><br>
+          <select name="region" id="region">
+            <option value="ireland" >Ireland, Republic of</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe(excl. ROI)</option>
+            <option value="north-america">North America</option>
+            <option value="south-america">South America</option>
+            <option value="africa">Africa</option>
+          </select><br>
+          <label for="email">Email:</label><br>
+          <input type="email" name="email" id="email" placeholder="example@example.com"><br>
+          <label for="subject">Subject:</label><br>
+          <textarea name="subject" id="" cols="60" rows="10" placeholder="Leave Your Message..."></textarea>
+          <button type="submit" onclick="alert('Thank Your For Your Message.\nWe Will Get In Touch With You ASAP!')">Submit</button>
+        </form>
+      </section>
     </main>
+    <!-- ////// Privacy section ////// -->
+      <section id="sub-header-container">
+        <div id="privacy-container">
+          <div id="corperate">
+            <h4 class="privacy-heading">Corperate</h4>
+            <a href="">Sponsor</a>
+            <div>
+              <a href="">Become one of us!</a>
+
+              <a href="">Do business with us?</a>
+            </div>
+          </div>
+          <div id="legal">
+            <h4 class="privacy-heading">Legal</h4>
+            <div>
+              <a href="">Privacy Policy</a>
+              <a href="">Terms and Conditions</a>
+              <a href="">Cookie Policy</a>
+              <a href="">Disclaimer</a>
+            </div>
+          </div>
+          <div id="customer">
+            <h4 class="privacy-heading" style="color:black ;">Customer</h4>
+            <div><a href="">Review</a> <a href="">Complaint</a></div>
+          </div>
+          <a href="./index.html" id="p-logo" title="Home"
+            ><img src="./images/ABCLogo.png" alt="Logo"
+          /></a>
+        </div>
+      </section>
+      <footer>
+      <h5>
+        Copyright @ ABC Architecture Ltd. 2022. Design by
+        <a href="https://github.com/nuoxiz?tab=repositories" target="_blank"
+          >Nuoxi Zhang</a
+        >
+      </h5>
+    </footer>
     <script>
       let slideIndex = 1;
       let gallerySlideIndex = 0;
