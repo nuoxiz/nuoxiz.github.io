@@ -237,6 +237,9 @@
 #gallery-prev {
   top: 50%;
 }
+.article {
+  margin-top: 2vh;
+}
 /* #ebebeb */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 650px) {
@@ -310,12 +313,13 @@
   /* .slide-image {
     width: 100%;
   } */
-  .slide-image img{
+  .slide-image img {
     height: 100%;
   }
   .slide-text {
     max-height: 30vh;
   }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -336,15 +340,15 @@
   .slide-image {
     width: 85vw;
     margin: auto;
-    margin-left: 6vw;
+    margin-left: 7vw;
   }
-  .slide-image img{
+  .slide-image img {
     width: 100%;
   }
   .slide-text {
     width: 83vw;
     margin: auto;
-    margin-left: 6vw;
+    margin-left: 7vw;
   }
   #gallery-prev,
   #gallery-next {
