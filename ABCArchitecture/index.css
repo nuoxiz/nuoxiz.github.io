@@ -305,6 +305,7 @@
   width: 80vw;
   margin: auto;
   padding: 5%;
+  margin-bottom: 2vh;
 }
 input[type="text"],
 select,
@@ -426,13 +427,16 @@ textarea:hover {
 }
 /*         Privacy section          */
 #sub-header-container {
-  width: 90vw;
+  width: 100vw;
+  background:#eee;
+  margin-top: 2vh;
 }
 #sub-header-container > h4 {
   color: #000;
 }
 #legal {
   grid-area: legal;
+
 }
 #corperate {
   grid-area: corperate;
@@ -447,19 +451,22 @@ textarea:hover {
   width: 40%;
 }
 #privacy-container {
-  width: 90vw;
+  width: 100vw;
   display: grid;
   grid-template-areas:
     "legal corperate customer"
     "p-logo p-logo p-logo";
   margin: 5vw;
-  color: white;
+  color:transparent;
   text-align: center;
+  background: transparent;
+  margin: auto;
 }
 #privacy-container a {
   text-decoration: none;
-  background: #ccc;
+  background:transparent;
   display: block;
+  color: black;
 }
 .privacy-heading {
   font-size: 3vh;
@@ -475,7 +482,9 @@ footer {
   background: -webkit-linear-gradient(right, #297dc6, #036aa9);
   background: linear-gradient(right, #297dc6, #036aa9);
   color: white;
+  font-size: clamp(90%, 110%, 130%);
 }
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 650px) {

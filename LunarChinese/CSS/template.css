@@ -151,6 +151,7 @@ h2 {
   grid-area: p-logo;
   margin: auto;
 }
+
 #privacy-container {
   display: grid;
   grid-template-areas:
