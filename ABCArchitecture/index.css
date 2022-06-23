@@ -240,6 +240,66 @@
 .article {
   margin-top: 2vh;
 }
+
+/*                                             Section Team                                  */
+#section-team {
+  display: flex;
+  height: 90vh;
+  overflow: hidden;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  margin: 1%;
+}
+.team-heading {
+  display: flex;
+  align-items: center;
+  margin-top: 2vh;
+  height: clamp(6vh, 7vh, 10vh);
+  border: 1px solid gray;
+  font-size: clamp(15px, 2vw, 3vw);
+  box-sizing: border-box;
+  margin: 1%;
+}
+.team-heading > b {
+  margin-left: 1%;
+}
+.team-photo-container img {
+  width: 23vw;
+}
+.card-container {
+  height: 97%;
+  max-width: 23vw;
+  display: grid;
+  margin: 0.625vw;
+  box-shadow: 5px 5px 5px grey;
+}
+.contact-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: black;
+  background: #ebebeb;
+  width: 60%;
+  height: 50%;
+  text-align: center;
+}
+.contact-button:hover {
+  background: -webkit-linear-gradient(right, #297dc6, #036aa9);
+  background: linear-gradient(right, #297dc6, #036aa9);
+}
+.card-container:hover {
+  box-shadow: 3px 3px 5px #036aa9;
+}
+.name,
+.job-description,
+.description {
+  margin: auto;
+}
+.description {
+  margin-left: 6%;
+}
+
 /* #ebebeb */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 650px) {
@@ -319,7 +379,20 @@
   .slide-text {
     max-height: 30vh;
   }
-
+  /*                          Section Team                */
+  #section-team {
+    height: 410vh;
+    display: block;
+  }
+  .card-container {
+    max-width: 85vw;
+    margin: auto;
+    height: 100vh;
+    margin-bottom: 3%;
+  }
+  .team-photo-container img{
+    width: 95vw;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
