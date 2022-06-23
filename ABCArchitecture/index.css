@@ -307,8 +307,11 @@
   }
 
   /*                      Gallery Section               */
-  .slide-image {
+  /* .slide-image {
     width: 100%;
+  } */
+  .slide-image img{
+    height: 100%;
   }
   .slide-text {
     max-height: 30vh;
@@ -334,6 +337,9 @@
     width: 85vw;
     margin: auto;
     margin-left: 6vw;
+  }
+  .slide-image img{
+    width: 100%;
   }
   .slide-text {
     width: 83vw;
