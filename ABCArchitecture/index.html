@@ -11,8 +11,8 @@
     ></script>
     <title>ABC Architecture Ltd</title>
   </head>
-  <body onscroll="displayYPosition()"
-    onresize="displayYPosition()"
+  <body onscroll="scrollForTab()"
+    onresize="scrollForTab()"
     onload="setTimeout(showOverlayAnimation, 500); " id="home">
     <nav id="side-nav">
       <a href="javascript:void(0)" id="closebtn" onclick="closeSideNav()"
@@ -90,10 +90,10 @@
       <section class="article" id="about-section" onload="textAnimation()">
         <figure class="image-section">
           <img src="./images/engineerDesigningTwo.jpg" alt="Engineer Looking at Computer">
-        </figure>
+        </figure> 
         <article class="text-section">
-          <b>Who Are WE?</b>
-          <p>Founded in 1901, we are the oldest architecture contracter in Ireland. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia accusantium fuga ipsa dignissimos eligendi laudantium ratione a odit dolores temporibus aspernatur fugiat eos rem corporis, maxime, autem dolorum molestias beatae vero. Ducimus ullam iure corporis eius! Repudiandae aut excepturi esse voluptas! Aperiam voluptatibus odit in fugiat reprehenderit asperiores ut excepturi.
+          <b class="title">Who Are WE?</b>
+          <p class="content" style="font-size: clamp(7px, 13.5px, 17px);">Founded in 1901, we are the oldest architecture contracter in Ireland. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia accusantium fuga ipsa dignissimos eligendi laudantium ratione a odit dolores temporibus aspernatur fugiat eos rem corporis, maxime, autem dolorum molestias beatae vero. Ducimus ullam iure corporis eius! Repudiandae aut excepturi esse voluptas! Aperiam voluptatibus odit in fugiat reprehenderit asperiores ut excepturi.
           </p>
         </article>
       </section>
@@ -107,8 +107,8 @@
             <img src="./images/constructionSite.jpg" alt="Construction Site">
           </figure>
           <article class="text-section slide-text">
-            <b>Explore our work</b>
-            <p>We are experienced in designing building for commercial and private customers around the world.</p>
+            <b class="title">Explore our work</b>
+            <p class="content" style="font-size: clamp(7px, 13.5px, 17px);">We are experienced in designing building for commercial and private customers around the world.</p>
           </article>
         </div>
         <div class="slide2">
@@ -116,8 +116,8 @@
             <img src="./images/appartment.jpg" alt="Appartment facing the see">
           </figure>
           <article class="text-section slide-text">
-            <b>Luxuary Appartment</b>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolorum corporis dolor quos eius id ad est aliquam ratione, iure consequatur tenetur. Consequuntur amet ex repellat obcaecati eligendi minus hic incidunt est! Ratione cupiditate odio provident ut, animi libero quam recusandae nihil ipsum, asperiores minima rem hic, tempora quidem eos! Cum iste magnam quisquam, natus adipisci totam voluptates fugit libero.</p>
+            <b class="title">Luxuary Appartment</b>
+            <p class="content" style="font-size: clamp(7px, 13.5px, 17px);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolorum corporis dolor quos eius id ad est aliquam ratione, iure consequatur tenetur. Consequuntur amet ex repellat obcaecati eligendi minus hic incidunt est! Ratione cupiditate odio provident ut, animi libero quam recusandae nihil ipsum, asperiores minima rem hic, tempora quidem eos! Cum iste magnam quisquam, natus adipisci totam voluptates fugit libero.</p>
           </article>
         </div>
         <div class="slide2">
@@ -125,8 +125,8 @@
             <img src="./images/villa.jpg" alt="Villa Image">
           </figure>
           <article class="text-section slide-text">
-            <b>Detached House</b>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione sit impedit iste dolorum odio architecto explicabo voluptate exercitationem eaque illo? Velit veritatis minima ullam natus deserunt quisquam, tempora, animi nam error ut molestiae maxime in perspiciatis iure reiciendis consequuntur nisi alias voluptatem doloremque ratione at pariatur. Omnis a minima ad alias, et accusamus iusto id? Deserunt culpa vel nesciunt! Accusamus expedita eius explicabo sit modi. Inventore ducimus cum beatae pariatur distinctio facere doloremque asperiores quidem sit. Sequi </p>
+            <b class="title">Detached House</b>
+            <p class="content" style="font-size: clamp(7px, 13.5px, 17px);">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione sit impedit iste dolorum odio architecto explicabo voluptate exercitationem eaque illo? Velit veritatis minima ullam natus deserunt quisquam, tempora, animi nam error ut molestiae maxime in perspiciatis iure reiciendis consequuntur nisi alias voluptatem doloremque ratione at pariatur. Omnis a minima ad alias, et accusamus iusto id? Deserunt culpa vel nesciunt! Accusamus expedita eius explicabo sit modi. Inventore ducimus cum beatae pariatur distinctio facere doloremque asperiores quidem sit. Sequi </p>
           </article>
         </div>
         <div class="slide2">
@@ -134,8 +134,8 @@
             <img src="./images/shoppingMall.jpg" alt="Shopping mall">
           </figure>
           <article class="text-section slide-text">
-            <b>Shopping Mall</b>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur sint facere ipsam quam quibusdam necessitatibus exercitationem quasi possimus, quae tempore maiores unde impedit non doloribus laborum magnam? Minima ratione porro sapiente nesciunt! Odio accusamus, dolor saepe obcaecati perferendis, beatae officiis minima, amet culpa ullam officia tenetur itaque numquam earum quae.</p>
+            <b class="title">Shopping Mall</b>
+            <p class="content" style="font-size: clamp(7px, 13.5px, 17px);">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur sint facere ipsam quam quibusdam necessitatibus exercitationem quasi possimus, quae tempore maiores unde impedit non doloribus laborum magnam? Minima ratione porro sapiente nesciunt! Odio accusamus, dolor saepe obcaecati perferendis, beatae officiis minima, amet culpa ullam officia tenetur itaque numquam earum quae.</p>
           </article>
         </div>
       </section>
@@ -148,36 +148,36 @@
           <figure class="team-photo-container">
             <img src="./images/portraitOne.jpg" alt="">
           </figure>
-          <b class="name">Anna Walsh</b>
-          <p class="job-description">Chief Designer</p>
-          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, atque.</p>
+          <b class="name title">Anna Walsh</b>
+          <p class="job-description content" style="font-size: clamp(7px, 13.5px, 17px);">Chief Designer</p>
+          <p class="description content" style="font-size: clamp(7px, 13.5px, 17px);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, atque.</p>
           <div class="contact-button">Contact</div>
         </div>
         <div class="card-container">
           <figure class="team-photo-container">
             <img src="./images/portraitThree.jpg" alt="">
           </figure>
-          <b class="name">James Connelly</b>
-          <p class="job-description">CEO</p>
-          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, atque.</p>
+          <b class="name title">James Connelly</b>
+          <p class="job-description content" style="font-size: clamp(7px, 13.5px, 17px);">CEO</p>
+          <p class="description content" style="font-size: clamp(7px, 13.5px, 17px);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, atque.</p>
           <div class="contact-button">Contact</div>
         </div>
         <div class="card-container">
           <figure class="team-photo-container">
             <img src="./images/portraitFour.jpg" alt="">
           </figure>
-          <b class="name">Jack Mahon</b>
-          <p class="job-description">Chief Engineer</p>
-          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, atque.</p>
+          <b class="name title">Jack Mahon</b>
+          <p class="job-description content" style="font-size: clamp(7px, 13.5px, 17px);">Chief Engineer</p>
+          <p class="description content" style="font-size: clamp(7px, 13.5px, 17px);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, atque.</p>
           <div class="contact-button">Contact</div>
         </div>
         <div class="card-container">
           <figure class="team-photo-container">
             <img src="./images/portraitTwo.jpg" alt="">
           </figure>
-          <b class="name">Luka & Mika</b>
-          <p class="job-description">Chief Therapist</p>
-          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, atque.</p>
+          <b class="name title">Luka & Mika</b>
+          <p class="job-description content" style="font-size: clamp(7px, 13.5px, 17px);">Chief Therapist</p>
+          <p class="description content" style="font-size: clamp(7px, 13.5px, 17px);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, atque.</p>
           <div class="contact-button">Contact</div>
         </div>
       </section>
@@ -299,24 +299,37 @@
           }
          slides[slideIndex - 1].style.display = "block";
       }
-      function displayYPosition() {
+      function scrollForTab() {
         let y = window.scrollY;
-        let message = "Y: " + y + "px ||||| " + "WindowX: " + window.innerWidth;
-        document.getElementById("y-position").innerHTML = message;
+        // let message = "Y: " + y + "px ||||| " + "WindowX: " + window.innerWidth;
+        // document.getElementById("y-position").innerHTML = message;
         if (y < 490) {
-          highlightTab("tab-home");
+          highlightTab(0);
         }
         if (y > 490) {
-          highlightTab("tab-about");
+          highlightTab(1);
+        }
+        if(y >=800)
+        {
+          highlightTab(2);
+        }
+        if(y >= 1345)
+        {
+          highlightTab(3);
+        }
+        if(y >= 1800){
+          highlightTab(4);
         }
       }
-      function highlightTab(id) {
-        let tablinks = document.getElementsByClassName("tablink");
-        let n = tablinks.length;
-        for (let i = 0; i < n; i++) {
+
+      let tablinks = document.getElementsByClassName("tablink");
+      let tablinksLength = tablinks.length;
+      function highlightTab(index){
+        for( let i =0; i < tablinksLength; i++ ){
           tablinks[i].className = tablinks[i].className.replace("active", "");
         }
-        document.getElementById(id).className += " active";
+        tablinks[index].className += " active";
+
       }
       function openSideNav(){
          document.getElementById("side-nav").style.width = "40vw";
@@ -334,7 +347,7 @@
         element.style.transition = "left 1.5s";
         element.style.left = "100vw"
       }
-      setTimeout(displayYPosition, 100);
+      setTimeout(scrollForTab, 100);
     </script>
   </body>
 </html>
