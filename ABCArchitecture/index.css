@@ -12,13 +12,7 @@
 body {
   background: #f9f9f9;
 }
-#display-y {
-  z-index: 2;
-  color: red;
-  position: fixed;
 
-  top: 50vh;
-}
 /*                        Navigation Bar                   */
 #left-nav {
   width: 50vw;
